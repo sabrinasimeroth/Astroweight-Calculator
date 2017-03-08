@@ -5,24 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Astroweight Calculator</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
+
+
   <div class="jumbotron">
-    <h1>Astroweight Calculator</h1>
-    <p>...</p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    <div class='container'>
+      <h1>Astroweight Calculator</h1>
+    </div>
   </div>
-  <input type="text" id="weightInput" placeholder = 'Enter your weight here'>
-    <label for="weightInput">Your Weight</label>
 
-  <select id="planets"></select>
-	  <label>Select A Planet</label>
+  <div class='container'>
+    <form id="astroWeightForm"class="form-inline">
+      <div class="form-group">
+        <label for="weightInput">Your weight</label>
+        <input type="text" class="form-control" id="weightInput" placeholder='Enter your weight'>
+      </div>
+      <div class="form-group">
+        <label for="planetsDropdown">on</label>
+        <select class="form-control" id="planetsDropdown"></select>
+      </div>
+      <button class="btn btn-default">Calculate</button>
+    </form>
 
-  <button id="button">Calculate</button>
-
-  <p id="result"></p>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="index.js"></script>
+    <p id="output"></p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <script src='astroweight.js'></script>
 </body>
 </html>
